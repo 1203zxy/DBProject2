@@ -1,0 +1,6 @@
+people表中列born、surname：值可以为null
+
+people表约束条件新增born 
+变为：unique(surname, first_name, born)
+
+alt_titles表中列title：值可以为null
