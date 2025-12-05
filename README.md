@@ -20,7 +20,7 @@
 - ### 处理重复数据
   利用 clean.py 文件清除重复的数据，将最终结果写入 clean_movies_2018_2025.csv
 - ### 生成 sql 文件
-  利用 generate_sql.py 文件，将 clean_movies_2018_2025.csv 中的数据按照原数据库的表构建插入语句，生成 import_movies.sql
+  利用 generate_sql.py 文件，先读取 create_db.py 生成的 filmdb.db ，记录其中已经出现过的演员和导演，再结合 clean_movies_2018_2025.csv 中的数据按照原数据库的表构建插入语句，生成 import_movies.sql
 - ### 获取最终的sql文件
   人工将 import_movies.sql 文件中的语句复制到 filmdb.sql 中，形成最终的 new_filmdb.sql 文件
 
